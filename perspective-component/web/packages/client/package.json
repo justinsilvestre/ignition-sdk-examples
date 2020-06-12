@@ -4,7 +4,7 @@
     "description": "Example client scope perspective components",
     "main": "dist/index.js",
     "typings": "dist/typings/example-client.d.ts",
-    "license": "UNlICENSED",
+    "license": "UNLICENSED",
     "scripts": {
         "build": "yarn run clean && yarn run lint && webpack --mode development",
         "client": "yarn run build",
@@ -35,7 +35,6 @@
         "sass-loader": "^7.1.0",
         "ts-loader": "5.3.3",
         "tslint": "5.14.0",
-        "tslint-react": "^3.6.0",
         "typescript": "3.3.4000",
         "webpack": "4.29.6",
         "webpack-cli": "3.3.0",
