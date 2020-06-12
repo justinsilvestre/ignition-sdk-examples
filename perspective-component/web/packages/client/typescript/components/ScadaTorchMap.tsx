@@ -6,7 +6,7 @@ import * as React from 'react';
 import { Component, ComponentMeta, ComponentProps, SizeObject } from '@inductiveautomation/perspective-client';
 import { observer } from 'mobx-react';
 import { useEffect } from 'react';
-import SimpleExample from './LeafletExampleMap';
+import { SimpleExample } from './LeafletExampleMap';
 
 // the 'key' or 'id' for this component type.  Component must be registered with this EXACT key in the Java side as well
 // as on the client side.  In the client, this is done in the index file where we import and register through the
