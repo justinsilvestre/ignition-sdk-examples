@@ -30,11 +30,14 @@ export class Image extends Component<ComponentProps, any> {
         // note that the topmost piece of dom requires the application of events, style and className as shown below
         // otherwise the layout won't work, or any events configured will fail.
         return (
+            <>
+            <h1>changes went through</h1>
             <img
                 {...this.props.emit()}
                 src={propUrl}
                 alt={`image-src-${propUrl}`}
             />
+            </>
         );
     }
 }
