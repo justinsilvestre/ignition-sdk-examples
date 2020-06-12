@@ -1,21 +1,21 @@
-import React, { Component } from 'react'
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
+import React, { Component } from 'react';
+import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 
 type State = {
-  lat: number,
-  lng: number,
-  zoom: number,
-}
+  lat: number;
+  lng: number;
+  zoom: number;
+};
 
 export default class SimpleExample extends Component<{}, State> {
   state = {
     lat: 51.505,
     lng: -0.09,
-    zoom: 13,
-  }
+    zoom: 13
+  };
 
   render() {
-    const position = [this.state.lat, this.state.lng]
+    const position = [this.state.lat, this.state.lng];
     return (
       <Map center={position} zoom={this.state.zoom}>
         <TileLayer
@@ -28,6 +28,6 @@ export default class SimpleExample extends Component<{}, State> {
           </Popup>
         </Marker>
       </Map>
-    )
+    );
   }
 }

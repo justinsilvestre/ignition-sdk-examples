@@ -24,28 +24,28 @@ function useLeaflet() {
     const cssTag = document.createElement('link');
     cssTag.rel = 'stylesheet';
     cssTag.href = 'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css';
-    cssTag.integrity = 'sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=='
-    cssTag.crossOrigin = ''
+    cssTag.integrity = 'sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==';
+    cssTag.crossOrigin = '';
 
     const scriptTag = document.createElement('script');
     scriptTag.async = false;
     scriptTag.src = 'https://unpkg.com/leaflet@1.6.0/dist/leaflet.js';
-    scriptTag.integrity = 'sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=='
-    scriptTag.crossOrigin = ''
+    scriptTag.integrity = 'sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==';
+    scriptTag.crossOrigin = '';
 
     document.body.appendChild(cssTag);
     document.body.appendChild(scriptTag);
 
     return () => {
-        document.body.removeChild(cssTag)
-        document.body.removeChild(scriptTag)
-    }
-  })
+        document.body.removeChild(cssTag);
+        document.body.removeChild(scriptTag);
+    };
+  });
 }
 const LeafletTags = React.memo(() => {
-    useLeaflet()
-    return <></>
-})
+    useLeaflet();
+    return <></>;
+});
 
 @observer
 export class ScadaTorchMap extends Component<ComponentProps, any> {
