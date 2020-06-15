@@ -14,14 +14,14 @@
         "deepClean": "npm run clean && rimraf node_modules __coverage__"
     },
     "dependencies": {
-        "@inductiveautomation/perspective-client": "^1.0.3",
-        "@types/react-leaflet": "^2.5.1",
-        "@inductiveautomation/perspective-client": "1.0.13",
+        "@inductiveautomation/perspective-client": "^1.0.13",
         "axios": "^0.19.0",
         "mobx": "5.15.1",
         "mobx-react": "6.1.8",
         "react": "16.8.4",
         "react-dom": "16.8.4",
+        "leaflet": "^1.6.0",
+        "@types/react-leaflet": "^2.5.1",
         "react-leaflet": "^2.7.0"
     },
     "devDependencies": {
@@ -30,6 +30,7 @@
         "@types/moment-timezone": "^0.5.3",
         "@types/react": "16.8.8",
         "@types/react-dom": "16.8.3",
+        "@types/leaflet": "1.5.12",
         "babel-core": "^6.26.3",
         "css-loader": "^2.1.1",
         "mini-css-extract-plugin": "^0.7.0",

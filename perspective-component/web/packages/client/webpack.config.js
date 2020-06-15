@@ -129,7 +129,7 @@ const config = {
         "react-dom": "ReactDOM",
         "mobx": "mobx",
         "mobx-react": "mobxReact",
-        "@inductiveautomation/perspective-client": "PerspectiveClient"
+        "@inductiveautomation/perspective-client": "PerspectiveClient",
     },
     optimization: {
         splitChunks: {

@@ -1,5 +1,4 @@
 {
-  "extends": ["tslint-react"],
   "rules": {
     "array-type": [true, "generic"],
     "arrow-return-shorthand": true,

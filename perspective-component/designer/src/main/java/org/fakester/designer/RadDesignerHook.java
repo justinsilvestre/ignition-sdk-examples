@@ -11,6 +11,7 @@ import com.inductiveautomation.perspective.designer.api.PerspectiveDesignerInter
 import org.fakester.common.component.display.Image;
 import org.fakester.common.component.display.Messenger;
 import org.fakester.common.component.display.TagCounter;
+import org.fakester.common.component.display.ScadaTorchMap;
 import org.fakester.designer.component.TagCountDesignDelegate;
 
 
@@ -51,6 +52,7 @@ public class RadDesignerHook extends AbstractDesignerModuleHook {
         registry.registerComponent(Image.DESCRIPTOR);
         registry.registerComponent(TagCounter.DESCRIPTOR);
         registry.registerComponent(Messenger.DESCRIPTOR);
+        registry.registerComponent(ScadaTorchMap.DESCRIPTOR);
 
         // register design delegates to get the special config UI when a component type is selected in the designer
         delegateRegistry.register(TagCounter.COMPONENT_ID, new TagCountDesignDelegate());
@@ -66,6 +68,7 @@ public class RadDesignerHook extends AbstractDesignerModuleHook {
         registry.removeComponent(Image.COMPONENT_ID);
         registry.removeComponent(TagCounter.COMPONENT_ID);
         registry.removeComponent(Messenger.COMPONENT_ID);
+        registry.removeComponent(ScadaTorchMap.COMPONENT_ID);
 
         delegateRegistry.remove(TagCounter.COMPONENT_ID);
     }

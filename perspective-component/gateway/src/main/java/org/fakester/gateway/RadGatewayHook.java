@@ -14,6 +14,7 @@ import org.fakester.common.RadComponents;
 import org.fakester.common.component.display.Image;
 import org.fakester.common.component.display.Messenger;
 import org.fakester.common.component.display.TagCounter;
+import org.fakester.common.component.display.ScadaTorchMap;
 import org.fakester.gateway.delegate.MessageComponentModelDelegate;
 import org.fakester.gateway.endpoint.DataEndpoints;
 
@@ -46,6 +47,7 @@ public class RadGatewayHook extends AbstractGatewayModuleHook {
             this.componentRegistry.registerComponent(Image.DESCRIPTOR);
             this.componentRegistry.registerComponent(TagCounter.DESCRIPTOR);
             this.componentRegistry.registerComponent(Messenger.DESCRIPTOR);
+            this.componentRegistry.registerComponent(ScadaTorchMap.DESCRIPTOR);
         } else {
             log.error("Reference to component registry not found, Rad Components will fail to function!");
         }
@@ -66,6 +68,7 @@ public class RadGatewayHook extends AbstractGatewayModuleHook {
             this.componentRegistry.removeComponent(Image.COMPONENT_ID);
             this.componentRegistry.removeComponent(TagCounter.COMPONENT_ID);
             this.componentRegistry.removeComponent(Messenger.COMPONENT_ID);
+            this.componentRegistry.removeComponent(ScadaTorchMap.COMPONENT_ID);
         } else {
             log.warn("Component registry was null, could not unregister Rad Components.");
         }

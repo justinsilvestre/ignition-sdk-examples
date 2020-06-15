@@ -20,7 +20,10 @@
         "mobx": "5.15.1",
         "bind-decorator": "^1.0.11",
         "react": "^16.8.4",
-        "react-dom": "^16.8.4"
+        "react-dom": "^16.8.4",
+        "react-leaflet": "^2.7.0",
+        "leaflet": "^1.6.0",
+        "@types/react-leaflet": "^2.5.1"
     },
     "devDependencies": {
         "@types/jsnlog": "2.17.35",

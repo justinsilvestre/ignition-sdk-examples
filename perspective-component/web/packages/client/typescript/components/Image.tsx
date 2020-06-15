@@ -31,7 +31,7 @@ export class Image extends Component<ComponentProps, any> {
         // otherwise the layout won't work, or any events configured will fail.
         return (
             <>
-            <h1>changes went through</h1>
+            <h1>changes went through 3</h1>
             <img
                 {...this.props.emit()}
                 src={propUrl}

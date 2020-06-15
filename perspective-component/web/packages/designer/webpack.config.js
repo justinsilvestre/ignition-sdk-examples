@@ -90,7 +90,7 @@ var config = {
         "mobx": "mobx",
         "mobx-react": "mobxReact",
         "@inductiveautomation/perspective-client": "PerspectiveClient",
-        "@inductiveautomation/perspective-designer": "PerspectiveDesigner"
+        "@inductiveautomation/perspective-designer": "PerspectiveDesigner",
     }
 };
 
